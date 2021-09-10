@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+/* main background */
+.body{
+    background: url("../bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* score box */
+#scoreBox{
+    position: absolute;
+    top:9px;
+    right:200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+
+}
+/* high score box */
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+}
+/* board(grids) */
+#board{
+    width:90vmin;
+    height:92vmin;
+    background: linear-gradient(rgb(118, 245, 129),rgb(228, 228, 206));
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    border:2px solid black;
+}
+/* head of the snake */
+.head{
+    background:linear-gradient(rgb(252, 134, 134),rgb(240, 240, 167));
+    border: 2px solid purple;
+    transform: scale(1.02);
+}
+/* body of snake */
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+
+}
+/* food of snake */
+.food{
+    background:linear-gradient(red,purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+
+}
